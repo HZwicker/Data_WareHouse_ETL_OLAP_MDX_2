@@ -1,1 +1,19 @@
 # Data_WareHouse_ETL_OLAP_MDX_2
+
+# Continuação do repósitorio Data_WareHouse_ETL_1 
+
+1 - Modelo de dados criado em uma Data Warehouse (Tabelas de Dimensões e Tabelas de Fato) usando ETL com Integration Services.
+
+2 - Construção de bases de consultas utilizando o banco de dados do tipo OLAP.
+
+
+
+Necessário estar instalado :
+
+1 - Visual Studio 2017
+
+2 - Microsoft SQL Server 2017
+
+3 - Microsoft SQL Server Management Studio
+
+4 - Microsoft SQL Server Data Tools
