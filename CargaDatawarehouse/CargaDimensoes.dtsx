@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{74BB57EE-B20B-4709-81B4-B85C4A81C24C}">
+  DTS:VersionBuild="66"
+  DTS:VersionGUID="{3EC1A9A8-554A-4D8B-8B8E-2FFE8FB6B8AD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -160,7 +160,7 @@
       DTS:ObjectName="Ano_Final">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">2014</DTS:Property>
+        DTS:Name="ParameterValue">2015</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -169,7 +169,7 @@
       DTS:ObjectName="Ano_Inicial">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">2014</DTS:Property>
+        DTS:Name="ParameterValue">2013</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -196,6 +196,7 @@
       DTS:refId="Package\Dimensão Cliente"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{08D3CB1C-8EA7-4946-BE33-5755EC258025}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2950,6 +2951,7 @@
       DTS:refId="Package\Dimensão Fábrica"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{661B0A0F-1C58-4FCE-87D2-D831F59E9086}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3755,6 +3757,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Organizacional Tab 1 Nivel 3"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{374397E3-50E3-44FE-861F-22A17FE55A4E}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4809,6 +4812,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Organizacional Tab 2 Nivel 1"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{416F442F-5B92-4A41-A066-0A44AB359FAA}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5721,6 +5725,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Organizacional Tab 2 Nivel 2"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{73288EF2-2280-4FB8-894B-C078FA238B5E}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6766,6 +6771,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Organizacional Tab1 Nivel 1"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{54403909-8B66-4900-9C6F-AC0D57F0ED42}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -7687,6 +7693,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Organizcional Tab 1 Nivel 2"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{08E214C6-E283-4A4A-B84F-C6FD2B325690}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -8741,6 +8748,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Produto - Nível Categoria"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{AD98B2CE-7B8F-4263-8258-CDF3EC5093C3}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -9692,6 +9700,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Produto - Nível Marca"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{eaa7b3b2-56a3-425f-b3e7-5c44f5f3f064}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -10650,6 +10659,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:refId="Package\Dimensão Produto - Nível Produto"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{FE267B8B-D2F2-4A20-92C7-60CE86AB3DF4}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -14286,6 +14296,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
       DTS:refId="Package\Execução da rotine de Esq Dir Nivel"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarefa Executar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{716911F4-5DB2-4BED-B2B7-BCFA015B4B7A}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14303,6 +14314,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
       DTS:refId="Package\Transferencia do Esquerda, Direita e Nivel"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{11D4794D-D861-4B60-ADD3-05DCE545337D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -15971,9 +15983,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16031,9 +16041,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16067,9 +16075,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16103,9 +16109,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16127,9 +16131,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16151,9 +16153,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16175,9 +16175,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16199,9 +16197,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16223,9 +16219,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18771,23 +18765,23 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,42"
+          Size="147.756521739131,41.7391304347827"
           Id="Package\Dimensão Tempo\Inserir Destino"
           TopLeft="5.50000000000006,238.5" />
         <NodeLayout
-          Size="172,42"
+          Size="171.965217391305,41.7391304347827"
           Id="Package\Dimensão Tempo\Comando OLE DB 1"
           TopLeft="437.5,238.5" />
         <NodeLayout
-          Size="217,42"
+          Size="217.04347826087,41.7391304347827"
           Id="Package\Dimensão Tempo\Dimensão de Alteração Lenta"
           TopLeft="187,136.5" />
         <NodeLayout
-          Size="162,42"
+          Size="161.947826086957,41.7391304347827"
           Id="Package\Dimensão Tempo\Comando OLE DB"
           TopLeft="214.5,238.5" />
         <NodeLayout
-          Size="219,42"
+          Size="218.713043478261,41.7391304347827"
           Id="Package\Dimensão Tempo\Execução do Script de Tempo"
           TopLeft="209,5.49999999999989" />
         <EdgeLayout
@@ -18821,9 +18815,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
