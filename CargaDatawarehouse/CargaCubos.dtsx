@@ -1,0 +1,199 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/7/2019 1:38:03 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-953OF61"
+  DTS:CreatorName="DESKTOP-953OF61\Henrique"
+  DTS:DTSID="{32BCECB8-75B7-4C64-B523-3B395D542B46}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1300.371"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="CargaCubos"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{E07D0757-71FE-4C68-A269-C50BB396D96F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{9E7AED32-55AD-4896-A546-AB1B5A8EB611}"
+      DTS:ObjectName="localhost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Atualização das Dimensões"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Atualização das Dimensões"
+      DTS:DTSID="{F89B9C4F-DCAF-41FE-8ECA-8BFF324D5EF7}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atualização das Dimensões"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="localhost"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Fabrica&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Produto&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Tempo&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Cliente&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Organizacional&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Atualização do Cubo Primário"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Atualização do Cubo Primário"
+      DTS:DTSID="{81b753a8-78c6-4765-a80e-8ab5918328e5}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atualização do Cubo Primário"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="localhost"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;CubeID&gt;COMPLETO&lt;/CubeID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Atualização dos Cubos Primários"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Atualização dos Cubos Primários"
+      DTS:DTSID="{4c7d5fd9-fe98-461a-9243-25cedf4b067f}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atualização dos Cubos Primários"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="localhost"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;CubeID&gt;CUSTOS&lt;/CubeID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;CubeID&gt;PRESIDENCIA&lt;/CubeID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;OLAPSucos&lt;/DatabaseID&gt;&#xA;      &lt;CubeID&gt;VENDAS&lt;/CubeID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restrição]"
+      DTS:CreationName=""
+      DTS:DTSID="{2F325135-4E2D-4674-9432-A815A76AF239}"
+      DTS:From="Package\Atualização das Dimensões"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restrição"
+      DTS:To="Package\Atualização dos Cubos Primários" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restrição 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{3D90EB98-A1E2-4B51-BC99-3C6EA696E7C5}"
+      DTS:From="Package\Atualização dos Cubos Primários"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restrição 1"
+      DTS:To="Package\Atualização do Cubo Primário" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="206.191304347827,41.7391304347827"
+          Id="Package\Atualização das Dimensões"
+          TopLeft="238.608686170717,139.721733925395" />
+        <NodeLayout
+          Size="206.191304347827,41.7391304347827"
+          Id="Package\Atualização dos Cubos Primários"
+          TopLeft="255.304337681204,219.756513552562" />
+        <NodeLayout
+          Size="206.191304347827,41.7391304347827"
+          Id="Package\Atualização do Cubo Primário"
+          TopLeft="269.913032752881,301.460859205671" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restrição]"
+          TopLeft="341.70433834463,181.460864360177">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.6956515104874,38.2956491923851"
+              Start="0,0"
+              End="16.6956515104874,30.7956491923851">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.1478245961925" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.1478245961925"
+                    Point2="0,19.1478245961926"
+                    Point3="4,19.1478245961926" />
+                  <mssgle:LineSegment
+                    End="12.6956515104874,19.1478245961926" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.6956515104874,19.1478245961926"
+                    Point2="16.6956515104874,19.1478245961926"
+                    Point3="16.6956515104874,23.1478245961926" />
+                  <mssgle:LineSegment
+                    End="16.6956515104874,30.7956491923851" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restrição 1]"
+          TopLeft="358.399989855117,261.495643987345">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14.6086950716766,39.9652152183264"
+              Start="0,0"
+              End="14.6086950716766,32.4652152183264">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.9826076091632" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.9826076091632"
+                    Point2="0,19.9826076091632"
+                    Point3="4,19.9826076091632" />
+                  <mssgle:LineSegment
+                    End="10.6086950716766,19.9826076091632" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.6086950716766,19.9826076091632"
+                    Point2="14.6086950716766,19.9826076091632"
+                    Point3="14.6086950716766,23.9826076091632" />
+                  <mssgle:LineSegment
+                    End="14.6086950716766,32.4652152183264" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
