@@ -2,11 +2,21 @@
 
 # Continuação do repósitorio Data_WareHouse_ETL_1 
 
+
+
+
 1 - Modelo de dados criado em uma Data Warehouse (Tabelas de Dimensões e Tabelas de Fato) usando ETL com Integration Services.
+
 
 2 - Construção de bases de consultas utilizando o banco de dados do tipo OLAP.
 
+
 3 - Extração de dados do OLAP usando consultas Multidimensionais (MDX) .
+
+
+
+
+
 
 
 
