@@ -6,6 +6,8 @@
 
 2 - Construção de bases de consultas utilizando o banco de dados do tipo OLAP.
 
+3 - Extração de dados do OLAP usando consultas Multidimensionais (MDX) .
+
 
 
 Necessário estar instalado :
