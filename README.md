@@ -14,7 +14,7 @@
 3 - Extração de dados do OLAP usando consultas Multidimensionais (MDX) .
 
 
-
+4 - Gerando relatórios no programa Power BI 
 
 
 
