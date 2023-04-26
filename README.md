@@ -1,20 +1,4 @@
-# Data_WareHouse_ETL_OLAP_MDX_2-com-Power-BI
-
-# Continuação do repósitorio Data_WareHouse_ETL_1 
-
-
-
-
-1 - Modelo de dados criado em uma Data Warehouse (Tabelas de Dimensões e Tabelas de Fato) usando ETL com Integration Services.
-
-
-2 - Construção de bases de consultas utilizando o banco de dados do tipo OLAP.
-
-
-3 - Extração de dados do OLAP usando consultas Multidimensionais (MDX) .
-
-
-4 - Gerando relatórios no programa Power BI (no arquivo GráficoSucos.pbix )
+Projeto do Curso "análise, modelagem, ETL e visualização de dados com SQL Server e Power BI" do Alura sobre uma criação de relatórios usando um modelo de dados criado em uma Data Warehouse, que envolve a construção de tabelas de dimensões e tabelas de fato utilizando ETL com Integration Services. Para construir bases de consultas, é utilizado um banco de dados do tipo OLAP, e os dados são extraídos usando consultas Multidimensionais (MDX).
 
 
 
